@@ -10,7 +10,7 @@
 3. Go to your gmail account and open parameters
 4. In the Signature section, create a new one
 5. * Windows / Linux: Use Ctr + v
-   * MacOS: ⌘ + C
+   * MacOS: ⌘ + V
 6. Save changes
 
 Et voilà !
