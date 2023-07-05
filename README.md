@@ -30,18 +30,19 @@
 
 ## How to use it on Mail (MacOs) ?
 
-1. Create a blank signature, tutorial <a href="https://support.apple.com/en-ie/guide/mail/mail11943/mac">here</a>, and close Mail.
-2. Open System Settings, click Privacy & Security, then click Full Disk Access and add Terminal application
-3. Open a terminal and enter the following command:
+1. Create a blank signature, tutorial <a href="https://support.apple.com/en-ie/guide/mail/mail11943/mac">here</a>.
+2. Quit and Close Mail.
+3. Open System Settings, click Privacy & Security, then click Full Disk Access and add Terminal application
+4. Open a terminal and enter the following command:
     ```shell
     cd ~/Library/Mail/V{version number}/MailData/Signatures
     ```
-4. Find the filename with .mailsignature extension of your signature based on the creation date:
+5. Find the filename with .mailsignature extension of your signature based on the creation date:
     ```shell
     ls -sl
     ```
-5. Open the file using a text editor and replace the body content with the content of signature.html
-6. Quick way using vim:
+6. Open the file using a text editor and replace the body content with the content of signature.html
+7. Quick way using vim:
     * Open the file
         ```shell
         vim {filename}.mailsignature
@@ -51,11 +52,13 @@
     * Write a body balise and paste the html code.
     * Press esc, :wq, ↩ to save and close the file
 
-7. On the Terminal enter the following command to lock your signature file:
+8. On the Terminal enter the following command to lock your signature file:
     ```shell
     chflags uchg {file_name}.mailsignature
     ```
-8. Open Mail and try your new signature !
-9. For security reason, remove Full Disk Access to the Terminal application
+9. Open Mail and try your new signature !
+10. For security reason, remove Full Disk Access to the Terminal application
+
+Another tutorial using MacOs UI <a ref="https://www.hubspot.com/email-signature-generator/add-html-signature-mail-mac">
 
 ## Et voilà !
